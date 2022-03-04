@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script src="./animatevillage.js"></script>
+        <script src="./07_robot.js"></script>
+        <script>
+            //1.在控制台下输出所有步骤
+            //runRobot(VillageState.random(), randomRobot);
+
+            //2.机器人邮递员采用随机算法，在图上输出所有步骤
+            //runRobotAnimation(VillageState.random(), randomRobot);
+
+            //采用更聪明的路由机器人，在图上输出所有步骤
+            //runRobotAnimation(VillageState.random(), routeRobot, []);
+
+
+            //采用目标导向机器人
+            runRobotAnimation(VillageState.random(), goalOrientedRobot, []);
+        </script>
+
+    </body>
+
+</html>
