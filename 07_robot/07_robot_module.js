@@ -24,7 +24,7 @@ function buildGraph(edges) {
   return graph;
 }
 
- const roadGraph=buildGraph(roads);
+const roadGraph=buildGraph(roads);
 
 var VillageState = class VillageState {
   constructor(place, parcels) {
@@ -119,4 +119,4 @@ function goalOrientedRobot({place, parcels}, route) {
   return {direction: route[0], memory: route.slice(1)};
 }
 
-
+export { VillageState, goalOrientedRobot } 
