@@ -2,6 +2,7 @@ function iwakeup() {
 	return new Promise((resolve, reject) => {
         console.log("我醒了！")
 	    setTimeout(resolve, 3000)
+		console.log("请问我在什么时候执行！")
 	})
 }
 
@@ -35,16 +36,15 @@ function iseefilm() {
 	})
 }
 
-//TODO 补上其他活动
+//TODO 补上其他活动的函数定义:傍晚跑步
 
 iwakeup()
 .then(()=>isleepagain())
 .then(()=>ieatbreakfast())
 .then(()=>igotoclasstocode())
 .then(()=>iseefilm())
-.then(()=>isleepagain());
+//TODO 补上其他活动的执行：傍晚跑步
 
 
 console.log("请问 我在什么时候执行？");
 
-//TODO 可以把内容和时间提出来吗？

@@ -7,6 +7,27 @@ window.setTimeout(()=>{
             window.setTimeout(()=>{
                 console.log("我要上课打代码了"); 
                 window.setTimeout(()=>{
+                    function buildGraph(edges) {
+                        let graph = Object.create(null);
+                        function addEdge(from, to) {
+                          if (graph[from] == null) {
+                            graph[from] = [to];
+                          } else {
+                            graph[from].push(to);
+                          }
+                        }
+                        for (let [from, to] of edges.map(r => r.split("-"))) {
+                          addEdge(from, to);
+                          addEdge(to, from);
+                        }
+                        window.setTimeout(()=>{
+                            console.log("我要跑个邮递员机器人的例子"); 
+                        },3000);
+                        return graph;
+
+                    }
+                    buildGraph([])
+
                     console.log("我得追剧了"); 
                     window.setTimeout(()=>{
                         console.log("游戏又要打我了"); 
@@ -20,13 +41,7 @@ window.setTimeout(()=>{
                 },3000);
             },3000);
         },3000);
-        console.log("啥时候会执行我B");
-    },3000);
-    console.log("啥时候会执行我A");
-},3000);
-console.log("啥时候会执行我");
-
-
-
+    },3000)
+},3000)
 
 //回调地狱 callback hell
