@@ -20,7 +20,13 @@ window.setTimeout(()=>{
                 },3000);
             },3000);
         },3000);
-    },3000)
-},3000)
+        console.log("啥时候会执行我B");
+    },3000);
+    console.log("啥时候会执行我A");
+},3000);
+console.log("啥时候会执行我");
+
+
+
 
 //回调地狱 callback hell

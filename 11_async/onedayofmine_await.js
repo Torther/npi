@@ -36,17 +36,29 @@ function iseefilm() {
 }
 
 
+
 const idoInTheMorning=async function(){
     await iwakeup();
     await isleepagain();
     await igotoclasstocode();
+	console.log("请问我在什么时候执行A");
+}
+
+//TODO 补上傍晚跑步的返回Promise的iRun函数，并添加下午iDoInAfternoon异步函数
+
+
+
+const oneDayOfMine=async function(){
+	await idoInTheMorning();
+	console.log("请问我在什么时候执行B");
+	await iseefilm();
+	console.log("请问 我在什么时候执行？");
 }
 
 
-await idoInTheMorning();
-await iseefilm();
 
-console.log("请问 我在什么时候执行？");
+oneDayOfMine();
+
 
 
 
