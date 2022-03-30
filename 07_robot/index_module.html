@@ -9,9 +9,9 @@
     </head>
 
     <body>
-        <script src="./animatevillage.js"></script>
-        <script src="./07_robot.js"></script>
-        <script>
+        <script type="module">
+            import {runRobotAnimation} from './animatevillage_module.js'
+            import { VillageState, goalOrientedRobot } from './07_robot_module.js'
 
             //1.在控制台下输出所有步骤
             //runRobot(VillageState.random(), randomRobot);
